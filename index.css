@@ -5,7 +5,16 @@ body {
 }
 
 input {
+  width: 100%;
+  padding: 10px;
+  border-color: #5f9341;
+  border-width: 1px;
+  box-sizing: border-box;
 }
 
 button {
+  margin-top: 3px;
+  background-color: #5f9341;
+  color: white;
+  padding: 10px 20px;
 }
