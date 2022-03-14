@@ -3,8 +3,10 @@ const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 const deleteBtn = document.getElementById("delete-btn");
-const saveTabBtn = document.getElementById("save-tab-btn");
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myleads"));
+const saveTabBtn = document.getElementById("save-tab-btn");
+
+console.log(leadsFromLocalStorage);
 if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
   render(myLeads);
