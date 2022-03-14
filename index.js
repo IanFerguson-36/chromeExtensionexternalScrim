@@ -2,13 +2,11 @@ let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
-const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myleads"));
 const deleteBtn = document.getElementById("delete-btn");
 const saveTabBtn = document.getElementById("save-tab-btn");
-
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myleads"));
 if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
-  ulEl.innerText = myLeads;
   render(myLeads);
 }
 
