@@ -8,7 +8,7 @@ const saveTabBtn = document.getElementById("save-tab-btn");
 
 if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
-  ulEl.innerText = myLeadsl;
+  ulEl.innerText = myLeads;
   render(myLeads);
 }
 
