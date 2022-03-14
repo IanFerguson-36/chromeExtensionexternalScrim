@@ -13,7 +13,11 @@ if (leadsFromLocalStorage) {
 }
 
 saveTabBtn.addEventListener("click", function () {
-  console.log("save tab clicked!");
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    myLeads.push(tabs[0].url);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    render(myLeads);
+  });
 });
 
 function render(leads) {
